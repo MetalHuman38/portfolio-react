@@ -1,3 +1,4 @@
+import React from "react";
 import "./css/App.css";
 import "./sass/App.scss";
 import {
@@ -9,7 +10,6 @@ import {
   WhatMetalBrain,
 } from "./containers";
 import { Brand, Cta, Navbar } from "./components";
-import React from "react";
 
 const App = () => {
   return (

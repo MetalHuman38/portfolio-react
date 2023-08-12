@@ -1,2 +1,47 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap";
+@import "../sass/abstract/variables";
+@import "../sass/abstract/animations";
+@import "../sass/abstract/mixins";
 @import "../containers/header/header.scss";
 @import "../components/navbar/navbar.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-background;
+  font-family: $font-family;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient__bg {
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 50%,
+    rgba(4, 12, 24, 1) 100%
+  );
+}
+
+.gradient__text {
+  background: $gradient-text-1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  padding: 4rem 6rem;
+}

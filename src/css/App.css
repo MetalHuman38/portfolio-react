@@ -1,5 +1,344 @@
-.name {
-  font-size: 3rem;
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap";
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    margin: 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}
+.metal__header {
+  display: flex;
+}
+
+.metal__header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.metal__header-content h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 3.875rem;
+  line-height: 4.6875rem;
+  letter-spacing: -0.04em;
+}
+
+.metal__header-content p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  color: #d4f5f5;
+  margin-top: 1.5rem;
+}
+
+.metal__header-content__input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.metal__header-content__input input {
+  flex: 2;
+  width: 100%;
+  height: 50px;
+  background: #052d56;
+  border-radius: 6px 0px 0px 6px;
+  border: 2px solid #052d56;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  color: #3d6184;
+  padding: 0 1rem;
+  outline: none;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.metal__header-content__input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  background: #ff4820;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.6875rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0 1rem;
+  border: none;
+}
+
+.metal__header-content__people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.metal__header-content__people img {
+  width: 11.373125rem;
+  height: 2.375rem;
+}
+
+.metal__header-content__people p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 2.375rem;
+  color: #fff;
+  margin-left: 1rem;
+  margin: 0 0 0 1rem;
+  text-align: center;
+}
+
+.metal__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #040c18;
+}
+
+.metal__header-image img {
+  border: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1050px) {
+  .metal__header {
+    flex-direction: column;
+  }
+  .metal__header-content {
+    margin: 0 0 3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .metal__header h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  .metal__header p {
+    font-size: 3.75rem;
+    line-height: 1.5rem;
+  }
+  .metal__header-content__people {
+    flex-direction: column;
+  }
+  .metal__header-content__people p {
+    margin: 0;
+  }
+  .metal__header-content__input input,
+  .metal__header-content__input button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .metal__header h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+  .metal__header p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  .metal__header-content__input input,
+  .metal__header-content__input button {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+.metal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+.metal__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.metal__navbar-links_logo {
+  margin-right: 0.5rem; /* Added a unit (e.g., rem, px) here */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fffae2;
+}
+.metal__navbar-links_container {
+  display: flex;
+  flex-direction: row;
+}
+.metal__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.metal__navbar-links_container p, .metal__navbar-sign p, .metal__navbar-menu_container p {
+  color: #fffae2;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.metal__navbar-sign button, .metal__navbar-menu_container button {
+  padding: 0.5rem 1rem;
+  background: #ff4820;
+  color: #fffae2;
+  border-radius: 0.3125rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.metal__navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+.metal__navbar-menu svg {
+  cursor: pointer;
+}
+.metal__navbar-menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: #0a210f;
+  padding: 2rem;
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+.metal__navbar-menu_container p {
+  margin: 1rem 0;
+}
+.metal__navbar-menu_container-links-sign {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .metal__navbar-links_container {
+    display: none;
+  }
+  .metal__navbar-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 700px) {
+  .metal__navbar {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .metal__navbar {
+    padding: 2rem;
+  }
+  .metal__navbar-sign {
+    display: none;
+  }
+  .metal__navbar-menu_container {
+    top: 20px;
+  }
+  .metal__navbar-menu_container-links-sign {
+    display: block;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #040c18;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient__bg {
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 3% 25%, rgb(0, 40, 83) 50%, rgb(4, 12, 24) 100%);
+}
+
+.gradient__text {
+  background: radial-gradient(circle at 40% 50%, rgb(238, 130, 238) 19%, rgb(255, 250, 226) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  padding: 4rem 6rem;
 }
 
 /*# sourceMappingURL=App.css.map */
